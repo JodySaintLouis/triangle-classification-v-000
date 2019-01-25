@@ -23,6 +23,8 @@ class Triangle
    end
 
    def error
+     if (side1 < 0) || (side2 < 0) || (side3 < 0)
+       self.kind = :TriangleError
    end
 
    class TriangleError < StandardError
