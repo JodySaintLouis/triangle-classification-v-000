@@ -14,10 +14,10 @@ class Triangle
       elsif ()
         raise :isosceles
 
-      elsif (side )
+      elsif (side1 != side2) && (side2 != side3) && (side1 != side3)
         raise :scalene
 
-      else (side1 != side2) && (side2 != side3) && (side1 != side3)
+      else
         raise :TriangleError
    end
 
