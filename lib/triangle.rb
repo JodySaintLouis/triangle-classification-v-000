@@ -21,7 +21,8 @@ class Triangle
         raise :TriangleError
       end
    end
+end
 
-  class TriangleError < StandardError
-  end
+
+class TriangleError < StandardError
 end
