@@ -9,7 +9,7 @@ class Triangle
 
    def kind
       if (side1 == side2) && (side2 == side3) && (side1 == side3)
-        raise :equilateral
+        self.kind = :equilateral
 
       elsif (side1 == side2) || (side2 == side3) || (side1 == side3)
         raise :isosceles
@@ -21,8 +21,8 @@ class Triangle
         raise :TriangleError
       end
    end
-end
 
+end
 
 class TriangleError < StandardError
 end
