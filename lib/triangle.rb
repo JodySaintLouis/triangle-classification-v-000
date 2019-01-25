@@ -18,7 +18,7 @@ class Triangle
         self.kind = :scalene
 
       else
-        raise :TriangleError
+        self.kind = :TriangleError
       end
    end
 
